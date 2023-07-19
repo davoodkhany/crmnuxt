@@ -1,5 +1,5 @@
 
-import { defuFn } from 'C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/defu/dist/defu.mjs'
+import { defuFn } from 'C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/defu/dist/defu.mjs'
 
 const inlineConfig = {}
 

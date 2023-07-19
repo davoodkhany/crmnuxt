@@ -12,54 +12,54 @@
     "jsxFragmentFactory": "Fragment",
     "paths": {
       "#imports": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/types/nitro-imports"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/types/nitro-imports"
       ],
       "#paths": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "~/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "@": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "@/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "~~": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "~~/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "@@": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "@@/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "assets": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/assets"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/assets"
       ],
       "assets/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/assets/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/assets/*"
       ],
       "public": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/public"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/public"
       ],
       "public/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/public/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/public/*"
       ],
       "pinia": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/pinia/dist/pinia"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/pinia/dist/pinia"
       ]
     }
   },
   "include": [
-    "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/types/nitro-nuxt.d.ts",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/types/nitro-nuxt.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"

@@ -9,7 +9,7 @@
     "skipLibCheck": true,
     "strict": true,
     "allowJs": true,
-    "baseUrl": "C:/Users/Lenovo/Desktop/CRM/vuenuxi",
+    "baseUrl": "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt",
     "noEmit": true,
     "resolveJsonModule": true,
     "allowSyntheticDefaultImports": true,
@@ -18,67 +18,67 @@
     ],
     "paths": {
       "~": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "~/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "@": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "@/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "~~": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "~~/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "@@": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
       ],
       "@@/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
       ],
       "assets": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/assets"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/assets"
       ],
       "assets/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/assets/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/assets/*"
       ],
       "public": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/public"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/public"
       ],
       "public/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/public/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/public/*"
       ],
       "#app": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/nuxt/dist/app"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/nuxt/dist/app/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/nuxt/dist/app/compat/vue-demi"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "pinia": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/pinia/dist/pinia"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/pinia/dist/pinia"
       ],
       "#vue-router": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/vue-router"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/vue-router"
       ],
       "#imports": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/imports"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/imports"
       ],
       "#build": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt"
       ],
       "#build/*": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/*"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/*"
       ],
       "#components": [
-        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/components"
+        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/components"
       ]
     }
   },
