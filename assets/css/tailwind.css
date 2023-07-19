@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@include './fontiran.css';
+body {
+    @apply bg-gray-100;
+}

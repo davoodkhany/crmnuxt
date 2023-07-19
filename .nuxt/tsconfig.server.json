@@ -1,0 +1,67 @@
+{
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "paths": {
+      "#imports": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/types/nitro-imports"
+      ],
+      "#paths": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/nuxt/dist/core/runtime/nitro/paths"
+      ],
+      "~": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+      ],
+      "~/*": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+      ],
+      "@": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+      ],
+      "@/*": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+      ],
+      "~~": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+      ],
+      "~~/*": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+      ],
+      "@@": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi"
+      ],
+      "@@/*": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/*"
+      ],
+      "assets": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/assets"
+      ],
+      "assets/*": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/assets/*"
+      ],
+      "public": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/public"
+      ],
+      "public/*": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/public/*"
+      ],
+      "pinia": [
+        "C:/Users/Lenovo/Desktop/CRM/vuenuxi/node_modules/pinia/dist/pinia"
+      ]
+    }
+  },
+  "include": [
+    "C:/Users/Lenovo/Desktop/CRM/vuenuxi/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro.d.ts",
+    "../**/*",
+    "../server/**/*"
+  ]
+}
