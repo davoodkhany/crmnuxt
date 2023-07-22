@@ -78,6 +78,17 @@ export const useRegisterUser = defineStore({
 
             })
 
+        },
+
+
+        GoogleLogin() {
+            axios.get('/auth/google')
+                .then((res) => {
+                    console.log(res);
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
         }
     },
 

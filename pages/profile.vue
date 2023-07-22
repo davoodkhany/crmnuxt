@@ -1,15 +1,19 @@
+<script setup>
+import { useOneTap } from "vue3-google-signin";
 
+const { isReady, login } = useOneTap({
+  onSuccess: (response) => {
+    console.log("Success:", response);
+  },
+  onError: () => console.error("Error with One Tap Login"),
+  // options
+});
+</script>
 
 <template>
-  <NuxtLayout>
-    <div>محتوای صفحه</div>
-  </NuxtLayout>
+  <button :disabled="!isReady" @click="() => login()">
+    Trigger One Tap Login Manually
+  </button>
 </template>
 
-<script setup>
 
-  
-  definePageMeta({
-    layout: "dashboard"
-  });
-  </script>

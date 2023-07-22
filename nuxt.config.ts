@@ -16,8 +16,11 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@nuxt/devtools",
     "nuxt-icon",
-
+    'nuxt-vue3-google-signin'
   ],
+  googleSignIn: {
+    clientId: '547858332775-4ik3eeg5a0edjp52834nhm8ut4380s20.apps.googleusercontent.com',
+  },
   devtools: {
     // Enable devtools (default: true)
     enabled: true,
@@ -25,6 +28,14 @@ export default defineNuxtConfig({
     vscode: {},
     // ...other options
   },
+
+// API URL CONFIG
+  runtimeConfig:{
+    public:{
+      apiBase:process.env.baseURL
+    }
+  },
+
 
 ssr:false,
 

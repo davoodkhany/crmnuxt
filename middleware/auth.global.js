@@ -6,10 +6,9 @@ import axios from "axios";
 async function isAuthenticated() {
 
     let token = localStorage.getItem("token")
-        // console.log(token);
+
     if (token == null) {
         return false;
-        // console.log('test');
     }
     try {
         const res = await axios.get("/user", {

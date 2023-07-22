@@ -29,8 +29,10 @@
     "axios": "^1.4.0",
     "cookie-universal-nuxt": "^2.2.2",
     "nuxt-icon": "^0.4.2",
+    "nuxt-vue3-google-signin": "^0.0.8",
     "pinia": "^2.1.4",
-    "save-dev": "^0.0.1-security"
+    "save-dev": "^0.0.1-security",
+    "vue3-google-login": "^2.0.18"
   },
   "overrides": {
     "vue": "latest"

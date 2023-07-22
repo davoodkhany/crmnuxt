@@ -264,6 +264,8 @@ import {
 
 const navigation = [
   { name: "اشخاص", href: "/dashboard/customers", current: true },
+  { name: "پروفایل", href: "/profile", current: false },
+
 ];
 
 const userNavigation = [

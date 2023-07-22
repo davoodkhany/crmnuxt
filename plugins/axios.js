@@ -1,7 +1,10 @@
 import axios from "axios";
 
 export default defineNuxtPlugin((NuxtApp) => {
-    axios.defaults.baseURL = process.env.baseURL
+
+    const config = useRuntimeConfig();
+
+    axios.defaults.baseURL = config.public.apiBase
     axios.defaults.withCredentials = true;
     axios.defaults.proxyHeaders = false;
     axios.defaults.headers.head.Accept = "application/json"
