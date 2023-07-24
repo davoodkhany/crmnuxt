@@ -84,7 +84,16 @@
   },
   "include": [
     "./nuxt.d.ts",
-    "../**/*"
+    "../**/*",
+    "../**/*",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt",
+    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
   ],
   "exclude": [
     "../dist",
