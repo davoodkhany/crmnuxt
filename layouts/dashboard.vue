@@ -29,7 +29,7 @@
             leave-to="-translate-x-full"
           >
             <DialogPanel
-              class="relative flex flex-col flex-1 w-full max-w-xs pt-5 pb-4 bg-indigo-700"
+              class="relative flex flex-col flex-1 w-full max-w-xs pt-5 pb-4 bg-white"
             >
               <TransitionChild
                 as="template"
@@ -66,9 +66,9 @@
                     :to="item.href"
                     :key="item.name"
                     :class="[
-                      item.current
+                      item.current == true
                         ? 'bg-indigo-800 text-white'
-                        : 'text-indigo-100 hover:bg-indigo-600',
+                        : 'text-indigo-100 hover:text-portage-500',
                       'group flex items-center px-2 py-2 text-base font-medium rounded-md',
                     ]"
                   >
@@ -93,14 +93,15 @@
     <!-- Static sidebar for desktop -->
     <div class="hidden md:fixed md:inset-y-0 md:flex md:w-64 md:flex-col">
       <!-- Sidebar component, swap this element with another sidebar if you like -->
-      <div class="flex flex-col flex-grow pt-5 overflow-y-auto bg-indigo-700">
-        <div class="flex items-center flex-shrink-0 px-4">
+      <div class="flex flex-col flex-grow pt-5 overflow-y-auto bg-white">
+        <div class="flex items-center justify-center flex-shrink-0 px-4">
           <img
             class="w-auto h-8"
             src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=300"
             alt="Your Company"
           />
         </div>
+        <hr class="mt-3">
         <div class="flex flex-col flex-1 mt-5">
           <nav class="flex-1 px-2 pb-4 space-y-1">
            <nuxt-link
@@ -109,8 +110,8 @@
               :to="item.href"
               :class="[
                 item.current
-                  ? 'bg-indigo-800 text-white'
-                  : 'text-indigo-100 hover:bg-indigo-600',
+                  ? 'text-portage-500'
+                  : 'text-black hover:text-portage-500',
                 'group flex items-center px-2 py-2 text-sm font-medium rounded-md',
               ]"
             >
@@ -262,8 +263,10 @@ import {
   TransitionRoot,
 } from "@headlessui/vue";
 
+
 const navigation = [
-  { name: "اشخاص", href: "/dashboard/customers", current: true },
+  {name:'داشبورد', href:"/dashboard" , current:true},
+  { name: "اشخاص", href: "/dashboard/customers", current: false },
   { name: "پروفایل", href: "/profile", current: false },
 
 ];

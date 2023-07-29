@@ -122,7 +122,9 @@
           </div>
         </div>
         <!-- Component Auth Google -->
-        <AuthGoogle />
+       <div class="flex justify-center ">
+         <AuthGoogle />
+       </div>
       </div>
     </div>
     <div>
