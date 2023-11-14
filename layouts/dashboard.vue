@@ -59,9 +59,9 @@
                 />
               </div>
               <div class="flex-1 h-0 mt-5 overflow-y-auto">
-                <nav class="px-2 space-y-1">
+                <!-- <nav class="px-2 space-y-1">
                   <nuxt-link
-                   keep-alive
+                    keep-alive
                     v-for="item in navigation"
                     :to="item.href"
                     :key="item.name"
@@ -69,7 +69,7 @@
                       item.current == true
                         ? 'bg-indigo-800 text-white'
                         : 'text-indigo-100 hover:text-portage-500',
-                      'group flex items-center px-2 py-2 text-base font-medium rounded-md',
+                      'group flex items-center px-2 py-2 text-base font-medium rounded-md active active:text-portage-500',
                     ]"
                   >
                     <component
@@ -79,7 +79,7 @@
                     />
                     {{ item.name }}
                   </nuxt-link>
-                </nav>
+                </nav> -->
               </div>
             </DialogPanel>
           </TransitionChild>
@@ -101,27 +101,59 @@
             alt="Your Company"
           />
         </div>
-        <hr class="mt-3">
-        <div class="flex flex-col flex-1 mt-5">
-          <nav class="flex-1 px-2 pb-4 space-y-1">
-           <nuxt-link
-              v-for="item in navigation"
-              :key="item.name"
-              :to="item.href"
-              :class="[
-                item.current
-                  ? 'text-portage-500'
-                  : 'text-black hover:text-portage-500',
-                'group flex items-center px-2 py-2 text-sm font-medium rounded-md',
-              ]"
-            >
-              <component
-                :is="item.icon"
-                class="flex-shrink-0 w-6 h-6 ml-3 text-indigo-300"
-                aria-hidden="true"
-              />
-              {{ item.name }}
-            </nuxt-link>
+        <hr class="mt-3" />
+        <div class="flex flex-col">
+          <nav class="flex-1 px-2">
+            <ul v-for="item in navigation" :key="item.name">
+              <nuxt-link
+                :key="item.name"
+                :to="item.href"
+                :class="[
+                  item.current
+                    ? 'text-portage-500'
+                    : 'text-black hover:text-portage-500',
+                  'group px-2 text-xs font-medium rounded-md active active:text-portage-500',
+                ]"
+                @click="toggleSubMenu(item)"
+              >
+                <div
+                  class="flex items-center justify-between text-base text-center"
+                >
+                  <div>
+                    <i class="ml-2" :class="item.Icon"></i>
+                    {{ item.name }}
+                  </div>
+                  <i
+                    v-if="item.subMenu && !item.showSubMenu"
+                    class="left-0 ml-4 fa-regular fa-chevron-right fa-2xs"
+                  ></i>
+                  <i
+                    v-if="item.subMenu && item.showSubMenu"
+                    class="left-0 ml-4 fa-regular fa-chevron-down fa-2xs"
+                  ></i>
+                </div>
+              </nuxt-link>
+
+              <!-- Show Sub Menu -->
+              <ul
+                v-if="item.subMenu && item.showSubMenu"
+                class="mr-4"
+                :class="['sub-menu', item.showSubMenu ? 'show' : '']"
+              >
+                <li
+                  v-for="subItem in item.subMenu"
+                  :key="subItem.name"
+                  class=""
+                >
+                  <nuxt-link :to="subItem.href">
+                    <div class="mb-4">
+                      <i :class="subItem.Icon" class="text-xs"></i>
+                      {{ subItem.name }}
+                    </div>
+                  </nuxt-link>
+                </li>
+              </ul>
+            </ul>
           </nav>
         </div>
       </div>
@@ -246,7 +278,7 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 
 import { useRegisterUser } from "@/store/UserStore.js";
 
@@ -263,13 +295,35 @@ import {
   TransitionRoot,
 } from "@headlessui/vue";
 
+const navigation = reactive([
+  {
+    name: "داشبورد",
+    href: "/dashboard",
+    current: true,
+    Icon: "fa-solid fa-house",
+  },
+  {
+    name: "اشخاص",
+    href: "/dashboard/customers",
+    current: false,
+    Icon: "fa-solid fa-user",
+    subMenu: [
+      {
+        name: "افزودن شخص جدید",
+        href: "/dashboard/customers/add",
+        Icon: "fa-solid fa-angle-right",
+      },
+      {
+        name: "همه اشخاص",
+        href: "/dashboard/customers",
+        Icon: "fa-solid fa-angle-right",
+      },
+    ],
+    showSubMenu: false,
+  },
 
-const navigation = [
-  {name:'داشبورد', href:"/dashboard" , current:true},
-  { name: "اشخاص", href: "/dashboard/customers", current: false },
-  { name: "پروفایل", href: "/profile", current: false },
-
-];
+  { name: "پروفایل", href: "/profile", current: false, Icon: "" },
+]);
 
 const userNavigation = [
   { name: "Your Profile", href: "#" },
@@ -279,10 +333,31 @@ const userNavigation = [
 
 const sidebarOpen = ref(false);
 
+function toggleSubMenu(item) {
+  item.showSubMenu = !item.showSubMenu;
+}
+
 definePageMeta({
   layout: false,
   //   middleware: [
   //   'auth'
   // ],
 });
+
+function isActive(item) {
+  return item.active;
+}
 </script>
+
+<style>
+.sub-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-hight 0.3s ease;
+}
+
+.sub-menu.show {
+  max-height: 1000px;
+}
+
+</style>

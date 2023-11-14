@@ -95,9 +95,7 @@
                   >مرا به خاطر بسپار</label
                 >
               </div>
-              <div>
-                <a href="" class="text-[#34A18D] text-xs">فراموشی رمز</a>
-              </div>
+
             </div>
             <div>
               <button

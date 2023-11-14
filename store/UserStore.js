@@ -1,6 +1,7 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
+
 export const useRegisterUser = defineStore({
     id: 'register',
     state: () => {
@@ -59,6 +60,7 @@ export const useRegisterUser = defineStore({
             .catch((err) => {
                 this.errors = err.response.data.errors
 
+
             })
         },
         //SignOut User
@@ -89,7 +91,15 @@ export const useRegisterUser = defineStore({
                 .catch((err) => {
                     console.log(err);
                 })
+        },
+
+        ResetPassword() {
+            axios.post('/')
         }
+
+
+
+
     },
 
 

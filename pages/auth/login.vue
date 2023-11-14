@@ -87,7 +87,7 @@
                 >
               </div>
               <div>
-                <a href="" class="text-[#34A18D] text-xs">فراموشی رمز</a>
+                <nuxt-link to="/auth/forget-password" class="text-[#34A18D] text-xs">فراموشی رمز</nuxt-link>
               </div>
             </div>
             <div>

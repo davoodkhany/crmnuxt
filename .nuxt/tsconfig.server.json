@@ -8,60 +8,71 @@
     "allowJs": true,
     "resolveJsonModule": true,
     "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
     "jsxFactory": "h",
     "jsxFragmentFactory": "Fragment",
     "paths": {
       "#imports": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/types/nitro-imports"
+        "./types/nitro-imports"
       ],
       "#paths": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/nuxt/dist/core/runtime/nitro/paths"
+        "../node_modules/nuxt/dist/core/runtime/nitro/paths"
       ],
       "~": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
+        "./.."
       ],
       "~/*": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
+        "../*"
       ],
       "@": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
+        "./.."
       ],
       "@/*": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
+        "../*"
       ],
       "~~": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
+        "./.."
       ],
       "~~/*": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
+        "../*"
       ],
       "@@": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt"
+        "./.."
       ],
       "@@/*": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/*"
+        "../*"
       ],
       "assets": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/assets"
+        "../assets"
       ],
       "assets/*": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/assets/*"
+        "../assets/*"
       ],
       "public": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/public"
+        "../public"
       ],
       "public/*": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/public/*"
+        "../public/*"
       ],
       "pinia": [
-        "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/node_modules/pinia/dist/pinia"
+        "../node_modules/pinia/dist/pinia"
       ]
     }
   },
   "include": [
-    "C:/Users/Lenovo/Desktop/CRM/crmprojectnuxt/.nuxt/types/nitro-nuxt.d.ts",
+    "./types/nitro-nuxt.d.ts",
+    "../node_modules/@pinia/nuxt/runtime/server",
+    "../node_modules/@nuxt/devtools/runtime/server",
+    "../node_modules/nuxt-icon/runtime/server",
+    "../node_modules/nuxt-vue3-google-signin/runtime/server",
+    "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../node_modules/nuxt/node_modules",
+    "../dist"
   ]
 }

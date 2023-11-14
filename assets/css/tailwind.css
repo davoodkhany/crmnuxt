@@ -5,3 +5,5 @@
 body {
     @apply bg-gray-100;
 }
+
+@include '../fontawesome/css/all.min.css'
