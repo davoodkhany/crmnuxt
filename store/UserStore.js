@@ -93,17 +93,17 @@ export const useRegisterUser = defineStore({
                 })
         },
 
-        ResetPassword() {
-            axios.post('/')
-        }
-
-
-
-
-    },
-
-
-
-
-
+        ForgetPassword() {
+            const formData = {
+                email: this.email
+            }
+            axios.post('/auth/forget-password', formData)
+                .then((res) => {
+                    console.log('ایمیل ارسال شد');
+                })
+                .catch((err) => {
+                    console.log(err);
+                })
+        },
+    }
 })

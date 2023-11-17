@@ -13,12 +13,12 @@
         </div>
 
         <div class="mt-5">
-          <form>
+          <form @submit.prevent="ForgetPassword.ForgetPassword">
             <div class="grid gap-y-4">
               <div>
                 <label for="email" class="block text-sm font-bold ml-1 mb-2 dark:text-white">ایمیل</label>
                 <div class="relative">
-                  <input type="email" id="email" name="email" class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm" required aria-describedby="email-error">
+                  <input type="email" id="email" v-model="ForgetPassword.email" name="email" class="py-3 px-4 block w-full border-2 border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 shadow-sm" required aria-describedby="email-error">
                 </div>
                 <p class="hidden text-xs text-red-600 mt-2" id="email-error">Please include a valid email address so we can get back to you</p>
               </div>
@@ -43,3 +43,11 @@
     </p>
   </div>
 </template>
+<script setup>
+import { ref } from "vue";
+import {useRegisterUser} from '@/store/UserStore' 
+
+const ForgetPassword = useRegisterUser();
+
+
+</script>
