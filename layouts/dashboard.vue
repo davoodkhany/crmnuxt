@@ -47,7 +47,7 @@
                     @click="sidebarOpen = false"
                   >
                     <span class="sr-only">Close sidebar</span>
-                    <XMarkIcon class="w-6 h-6 text-white" aria-hidden="true" />
+                  
                   </button>
                 </div>
               </TransitionChild>
@@ -166,7 +166,7 @@
           @click="sidebarOpen = true"
         >
           <span class="sr-only">Open sidebar</span>
-          <Bars3BottomLeftIcon class="w-6 h-6" aria-hidden="true" />
+       
         </button>
         <div class="flex justify-between flex-1 px-4">
           <div class="flex flex-1">
@@ -178,7 +178,7 @@
                 <div
                   class="absolute inset-y-0 left-0 flex items-center pointer-events-none"
                 >
-                  <MagnifyingGlassIcon class="w-5 h-5" aria-hidden="true" />
+                 
                 </div>
                 <input
                   id="search-field"
@@ -196,7 +196,7 @@
               class="p-1 text-gray-400 bg-white rounded-full hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
             >
               <span class="sr-only">View notifications</span>
-              <BellIcon class="w-6 h-6" aria-hidden="true" />
+           
             </button>
 
             <!-- Profile dropdown -->
@@ -280,9 +280,16 @@
 <script setup>
 import { ref, reactive } from "vue";
 
-import { useRegisterUser } from "@/store/UserStore.js";
+import { useRegisterUser } from "@/store/AuthStore.js";
 
 const AuthStore = useRegisterUser();
+
+definePageMeta({
+  layout: true,
+  //   middleware: [
+  //   'auth'
+  // ],
+});
 
 import {
   Dialog,
@@ -337,19 +344,16 @@ function toggleSubMenu(item) {
   item.showSubMenu = !item.showSubMenu;
 }
 
-definePageMeta({
-  layout: false,
-  //   middleware: [
-  //   'auth'
-  // ],
-});
+
 
 function isActive(item) {
   return item.active;
 }
+
 </script>
 
 <style>
+
 .sub-menu {
   max-height: 0;
   overflow: hidden;
@@ -359,5 +363,6 @@ function isActive(item) {
 .sub-menu.show {
   max-height: 1000px;
 }
+
 
 </style>

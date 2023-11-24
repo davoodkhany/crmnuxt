@@ -142,7 +142,7 @@
 import { ref, computed, watchEffect } from "vue";
 
 // UserStore Import
-import { useRegisterUser } from "@/store/UserStore.js";
+import { useRegisterUser } from "@/store/AuthStore.js";
 
 // Axios Import
 import axios from "axios";

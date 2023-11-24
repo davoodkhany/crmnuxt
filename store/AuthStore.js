@@ -10,11 +10,13 @@ export const useRegisterUser = defineStore({
             password: '',
             name: '',
             company: '',
-            status: '',
+            status: null,
             errors: '',
             results: '',
             user: '',
-            auth: ''
+            auth: '',
+            token: '',
+            password_confirmation: ''
         }
     },
 
@@ -105,5 +107,24 @@ export const useRegisterUser = defineStore({
                     console.log(err);
                 })
         },
+
+        ResetPassword() {
+            const formData = {
+                email: this.email,
+                password: this.password,
+                token: this.token,
+                password_confirmation: this.password_confirmation
+            };
+
+            axios.post('/auth/reset-password', formData)
+                .then((res) => {
+                    this.status = res.data.message;
+                    this.errors = "";
+                })
+                .catch((err) => {
+                    this.errors = err.response.data.errors
+                })
+
+        }
     }
 })

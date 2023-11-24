@@ -45,7 +45,7 @@
 </template>
 <script setup>
 import { ref } from "vue";
-import {useRegisterUser} from '@/store/UserStore' 
+import {useRegisterUser} from '@/store/AuthStore' 
 
 const ForgetPassword = useRegisterUser();
 

@@ -7,7 +7,7 @@
 
 <script setup>
 
-import { useRegisterUser } from "@/store/UserStore";
+import { useRegisterUser } from "@/store/AuthStore";
 
 // const {isAuthenticated} = useRegisterUser();
 
