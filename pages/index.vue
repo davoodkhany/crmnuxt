@@ -5,6 +5,11 @@
     </NuxtLayout>
 
   </div>
+
+
+<div>
+  test
+</div>
 </template>
 
 
